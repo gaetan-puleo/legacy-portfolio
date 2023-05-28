@@ -1,0 +1,22 @@
+// out: null, main : feather.less
+.loopColSpacerTiny(@index) when (@index > 0){
+    .@{pre}tiny-before-@{index}{
+        margin-left: (100% / @gridColNumber * @index);   
+    }
+    
+    .@{pre}tiny-after-@{index}{
+        margin-left: (100% / @gridColNumber * @index);   
+    }
+    .loopColSpacerTiny(@index - 1 );
+}
+
+.loopColSpacerSmall(@index) when (@index > 0){
+    .@{pre}small-before-@{index}{
+        margin-left: (100% / @gridColNumber * @index);   
+    }
+    
+    .@{pre}small-after-@{index}{
+        margin-left: (100% / @gridColNumber * @index);   
+    }
+    .loopColSpacerSmall(@index - 1 );
+}

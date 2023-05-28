@@ -1,0 +1,72 @@
+// out: null, main : feather.less
+
+.default-font-size{
+    font-size:16px;
+    font-size: 1.6rem;
+}
+.inline-block-container{
+    letter-spacing: -0.31em;
+    /* Webkit: collapse white-space between units */
+    *letter-spacing: normal;
+    /* reset IE < 8 */
+    *word-spacing: -0.43em;
+    /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed;
+    /* Webkit: fixes text-rendering: optimizeLegibility */
+    font-size: 0;
+    display: block; /*fallback*/
+    display: flex; /*modern browser*/
+    flex-flow: row wrap; /*break lines*/
+    /* Prevents distributing space between rows*/    
+}
+
+.inline-block{
+    display: inline-block; //fallback
+    word-spacing: normal;
+    letter-spacing: normal;
+    text-rendering: auto;
+}
+
+/*grid*/
+
+/*boucle de création de grille pour les petites résolutions*/
+.loopCol(@index) when (@index > 0){ 
+    .@{pre}tiny-@{index},.@{pre}tn-@{index}{
+    width:(100% / @gridColNumber * @index - @gridGutterSize )!important;
+    max-width:(100% / @gridColNumber * @index - @gridGutterSize )!important;
+    flex-basis:(100% / @gridColNumber * @index - @gridGutterSize )!important;
+  }
+  .loopCol(@index - 1 );
+        
+}
+
+.loopColSmall(@index) when (@index > 0){ 
+    .@{pre}small-@{index},.@{pre}sm-@{index}{
+    width:(100% / @gridColNumber * @index - @gridGutterSize )!important;
+    max-width:(100% / @gridColNumber * @index - @gridGutterSize )!important;
+    flex-basis:(100% / @gridColNumber * @index - @gridGutterSize )!important;
+  }
+  .loopColSmall(@index - 1 );
+    
+}
+
+.loopColMedium(@index) when (@index > 0){ 
+    .@{pre}medium-@{index},.@{pre}md-@{index}{
+    width:(100% / @gridColNumber * @index - @gridGutterSize )!important;
+    max-width:(100% / @gridColNumber * @index - @gridGutterSize )!important;
+    flex-basis:(100% / @gridColNumber * @index - @gridGutterSize )!important;
+  }
+  .loopColMedium(@index - 1 );
+    
+}
+
+
+.loopColWide(@index) when (@index > 0){ 
+    .@{pre}wide-@{index},.@{pre}wd-@{index}{
+    width:(100% / @gridColNumber * @index - @gridGutterSize )!important;
+    max-width:(100% / @gridColNumber * @index - @gridGutterSize )!important;
+    flex-basis:(100% / @gridColNumber * @index - @gridGutterSize )!important;
+  }
+  .loopColWide(@index - 1 );
+    
+}

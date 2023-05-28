@@ -1,0 +1,31 @@
+// out: null, main : feather.less
+
+
+[class*="@{pre}tiny"],
+[class*="@{pre}small"],
+[class*="@{pre}medium"],
+[class*="@{pre}wide"]{
+    .inline-block;    //cross browser inline block without white-space
+    margin: 0;//reset
+    padding: 0;//reset
+    vertical-align: top; /*inline block fallback vertical align fix*/
+    align-self: flex-start; 
+    width: 100% !important ; 
+    padding-left:@gridGutterPaddingSize / 2; /*gutter size divided by 2 */
+    padding-right:@gridGutterPaddingSize / 2; /*gutter size divided by 2 */
+}
+
+.loopCol(12); //number of cells for tiny grid
+
+@media only screen and (min-width:@mediaGridSmall){
+    
+    .loopColSmall(12); //number of cells for small grid
+}
+
+@media only screen and (min-width:@mediaGridMedium){
+    .loopColMedium(12); //number of cells for medium grid
+}
+
+@media only screen and (min-width:@mediaGridWide){
+    .loopColWide(12); //number of cells for wide grid
+}

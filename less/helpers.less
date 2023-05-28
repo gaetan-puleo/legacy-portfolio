@@ -1,0 +1,66 @@
+// out: null, main : feather.less
+
+//container helpers
+.@{pre}container--sizing{
+    max-width:@containerSize;
+    margin: 0 auto;
+    word-spacing: normal;
+    letter-spacing: normal;
+    .default-font-size;
+    padding-left:@gridGutterPaddingSize / 2; /*gutter size divided by 2 */
+    padding-right:@gridGutterPaddingSize / 2; /*gutter size divided by 2 */
+}
+
+.@{pre}container__fit{
+    &>* {
+        max-width: 100%!important;
+    }
+}
+
+.@{pre}elements--fit{
+    max-width: 100%!important;
+}
+
+//center helpers
+
+.@{pre}center__txt{
+    text-align: center;
+}
+
+//z-index
+
+.@{pre}zindex--1{
+    z-index: 1;
+}
+
+.@{pre}zindex--2{
+    z-index: 2;
+}
+
+.@{pre}zindex--3{
+    z-index: 3;
+}
+
+//pin
+.@{pre}pin--top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.@{pre}pin--top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ 
+.@{pre}pin--bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.@{pre}pin--bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

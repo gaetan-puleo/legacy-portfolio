@@ -1,0 +1,12 @@
+[class*="container"] > div[class*="tiny"], 
+[class*="container"] > div[class*="small"], 
+[class*="container"] > div[class*="medium"], 
+[class*="container"] > div[class*="wide"]{
+    background-color: lightgrey;
+    background-clip: content-box;
+    margin-top: 5px;
+} 
+
+h2{
+    text-transform: capitalize;
+}

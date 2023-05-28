@@ -1,0 +1,15 @@
+test compatibilité
+
+simple grille
+
+firefox 3 ok (inline-block fallback) mais background-clip n'est pas supporté( la solution est de mettre l'élément avec le background-color dans une cellule de la grille)
+firefox > 4 ok (inline-block fallback) 
+
+
+chromium > 9 (inline-block fallback) ok mais background-clip n'est pas supporté( la solution est de mettre l'élément avec le background-color dans une cellule de la grille)
+chromium > 10.0.648.82 ok (inline-block fallback)
+
+chrome > 44 ok (flexbox)
+
+incompatible ie8
+internet explorer 11 ok (flexbox)

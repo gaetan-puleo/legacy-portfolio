@@ -1,0 +1,114 @@
+// out: null, main : feather.less
+.nav-brand--left{
+    padding: 5px;
+    display: inline-block;
+    line-height: (@lineHeightLink * 1px); /*px fallback*/
+    line-height: (@lineHeightLink / 10rem);
+    float: left;
+}
+.nav-brand--right{
+    padding: 5px;
+    display: inline-block;
+    line-height:  (@lineHeightLink * 1px); /*px fallback*/
+    line-height:  (@lineHeightLink / 10rem);
+    float: right;
+}
+.nav--wrap{
+    clear: both;
+}
+.nav--wrap:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.nav--left,.nav--right{
+    clear: both;
+}
+.nav,.nav--left,.nav--right{
+    margin: 0;
+    padding: 0;
+    
+    
+    ul{
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+    li{
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        a{
+            padding: 5px;
+            display: block;
+            line-height: (@lineHeightLink * 1px); /*px fallback*/
+            line-height: (@lineHeightLink /10rem);
+            
+        }
+    }
+}
+@media only screen and (min-width:@mediaGridMedium){
+    .nav--wrap{
+        
+    }
+    .nav--left{
+        float: left;
+    }
+    .nav,.nav--right,.nav--left{
+        display: inline-block;
+        clear: none;
+        
+        li{
+            float: left;
+            position: relative;
+            li,a{
+                white-space: nowrap;       
+
+            }
+        }
+        li:hover > ul{
+            display: block;
+        }
+        ul:after{
+            visibility: hidden;
+             display: block;
+             font-size: 0;
+             content: " ";
+             clear: both;
+             height: 0;
+        }
+        
+        li ul{
+            position: absolute;
+            top:100%;
+            left: 0;
+            display: none;
+            
+            ul{
+                left: 100%;
+                top: 0;
+                
+            }
+            li{
+                float: none;
+            }            
+        }
+        
+    } 
+    .nav:after,.nav--left:after,.nav--right:after{
+        visibility: hidden;
+         display: block;
+         font-size: 0;
+         content: "";
+         clear: both;
+         height: 0;
+    }
+    .nav--right{
+        float:right;
+    }
+
+}

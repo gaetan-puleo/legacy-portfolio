@@ -1,0 +1,36 @@
+/*link debug*/
+a{ /*lien sans href*/
+    color: red!important;
+    outline: 3px solid red !important
+}
+
+a[href] /*lien avec href vide*/{
+    color:green!important;
+    outline: none!important
+}
+
+a[href=""]{ /*lien sans href*/
+    color: red!important;
+    outline: 3px solid red !important
+}
+a[href^="#"] /*lien avec une ancre*/{
+    color: blue!important;
+    outline: 3px solid blue !important; 
+}
+
+/*img debug*/
+
+img{
+    outline: 3px solid red !important;
+}
+
+img[alt]{
+    outline: none!important;
+}
+
+img[alt=""]{
+    outline: 3px solid red !important;
+}
+
+/*debug class*/
+

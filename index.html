@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gaétan Puléo - Intégrateur Web</title>
+    <meta name="description" content="description de la page" />
+    <meta name="author" content="Gaétan Puléo">
+    <link rel="stylesheet" href="css/feather.css">
+    <link rel="stylesheet" href="other-styles/porfolio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png" />
+<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
+
+
+</head>
+<body>
+    <header class="header">
+        <div class="nav--wrap header">
+            <nav id="navigation" class="nav--right">
+                <ul>
+                    <li><a data-scroll href="#titre">Home</a></li>
+                    <li><a data-scroll href="#competences">Mes compétences</a></li>
+                    <li><a data-scroll href="#draw-timeline">Mon parcours</a></li>
+                    <li><a data-scroll href="#contact">Me contacter</a></li>
+                </ul>
+            </nav>
+            <div class="nav-brand--left"> <span class="name"> <img src="img/gp-50.png" alt="logo Gaetan Puléo"> GAÉTAN PULÉO <span aria-hidden="true"><span class="fun"></span></span></span></div>
+            <div class="nav-brand--right"><button onclick="toggleNav();" id="toggle-nav"><img class="menu-img" alt="menu" src="img/menu-alt.svg"/></button></div>
+    
+        </div>
+        <h1 id="titre" class="title">
+            <span class="hw">HELLO WORLD</span> je suis <span class="metier">intégrateur web</span>
+        </h1>
+    </header>
+    <section id="aPropos" class="container--sizing">
+        <h2>À propos de moi</h2>
+        <p>Je m'appelle Gaétan Puléo, je suis un intégrateur web qui vit à Paris</p>
+        <p>Après une première formation en alternance en tant qu'infographiste, je me suis dirigé vers des études de chef de projets pour compléter mon profil.</p>
+        
+       <!-- <p>Actuellement encore en cours je souhaite néanmoins trouver une entreprise d'accueil pour perfectionner ma formation.</p>-->
+    </section>
+    <section id="competences">
+        <h2><span>Compétences</span></h2>
+        <div class="container--full code">
+            <div class="medium-4 small-6">
+                <h3>Langages</h3>
+                <div class="container--full">
+                    <div class="tiny-6">
+                        <div class="img-shape">
+                            <img src="img/html5.png" alt="">
+                        </div>
+                        <span class="competences-txt">HTML5</span>
+                    </div>
+                     <div class="tiny-6">
+                        <div class="img-shape">
+                            <img src="img/css3.png" alt="">
+                        </div>
+                        <span class="competences-txt">CSS3</span>
+                    </div>
+                    <div class="tiny-6">
+                        <div class="img-shape">
+                            <img src="img/javascript.png" alt="">
+                        </div>
+                   		<span class="competences-txt">Javascript</span>
+                    </div>
+                    <div class="tiny-6">
+                        <div class="img-shape">
+                            <img src="img/less.png" alt="">
+                        </div>
+                        <span class="competences-txt">LESS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="medium-4 small-6">
+                <h3>CMS</h3>
+                <div class="container--full">
+                    <div class="tiny-6">
+                        <div class="img-shape">
+                            <img src="img/magento.png" alt="">
+                        </div>
+                        <span class="competences-txt">Magento</span>
+                    </div>
+                     <div class="tiny-6">
+                        <div class="img-shape">
+                            <img src="img/wordpress.png" alt="">
+                        </div>
+                        <span class="competences-txt">Wordpress</span>
+                    </div>
+                    <div class="tiny-6">
+                        <div class="img-shape">
+                            <img src="img/prestashop.png" alt="">
+                        </div>
+                        <span class="competences-txt">Prestashop</span>
+                    </div>
+                </div>
+            </div>
+            <div class="medium-4 small-6">
+                <h3>Logiciels</h3>
+                <div class="container--full">
+                    <div class="tiny-6">
+                        <div class="img-shape">
+                            <img src="img/photoshop.png" alt="">
+                        </div>
+                        <span class="competences-txt">Photoshop</span>
+                    </div>
+                     <div class="tiny-6">
+                        <div class="img-shape">
+                            <img src="img/illustrator.png" alt="">
+                        </div>
+                        <span class="competences-txt">Illustrator</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--
+    <section id="parcours" class="container-parcours container--sizing">
+        <h2 class="reverse-timeline"><span>mon parcours</span></h2>
+        <div class="data-block">
+            <div class="data-title">Mars 2015 à Aujourd'hui</div>
+            <div class="data-content">
+                <h3>Intégrateur web</h3>
+                <ul>
+                    <li>
+                        <p>Création de <strong>formulaire</strong> en php et gestion des erreurs avec une surcouche en <strong>javascript</strong> 
+                            (fallback en php si le javascript est désactivé). 
+                        </p>
+                        <p>
+                            Le but était de créer un formulaire d'envoi générant un PDF (avec l'utilisation de FPDF) et envoyant un pdf en interne par email (avec l'utilisation de phpmailer). 
+                        </p>
+
+                    </li>
+
+                    <li><strong>Intégration</strong> d'une maquette de page accueil.</li>
+                    <li><strong>Integration Newsletter</strong>.</li>
+                    <li>Recherche et Développement sur  l'architecture de <strong>Magento</strong></li>
+                </ul>
+            </div>
+        </div>
+        <div class="data-block">
+            <div class="data-title">Mars 2015 à Aujourd'hui</div>
+            <div class="data-content">
+                <h3>Intégrateur web</h3>
+                <ul>
+                    <li>
+                        <p>Création de <strong>formulaire</strong> en php et gestion des erreurs avec une surcouche en <strong>javascript</strong> 
+                            (fallback en php si le javascript est désactivé). 
+                        </p>
+                        <p>
+                            Le but était de créer un formulaire d'envoi générant un PDF (avec l'utilisation de FPDF) et envoyant un pdf en interne par email (avec l'utilisation de phpmailer). 
+                        </p>
+
+                    </li>
+
+                    <li><strong>Intégration</strong> d'une maquette de page accueil.</li>
+                    <li><strong>Integration Newsletter</strong>.</li>
+                    <li>Recherche et Développement sur  l'architecture de <strong>Magento</strong></li>
+                </ul>
+            </div>
+        </div>
+    </section>-->
+    <section id="draw-timeline" class="container--sizing">
+       <h2 class="reverse-timeline"><span>mon parcours</span></h2>
+        <div class="line-timeline"></div>
+        <div class="data-block">
+            <div class="data-title">Mars 2015 à Aujourd'hui</div>
+            <div class="data-content">
+                <h3>Intégrateur web</h3>
+                <ul>
+                    <li>
+                        <p>Création de <strong>formulaire</strong> en php et gestion des erreurs avec une surcouche en <strong>javascript</strong> 
+                            (fallback en php si le javascript est désactivé). 
+                        </p>
+                        <p>
+                            Le but était de créer un formulaire d'envoi générant un PDF (avec l'utilisation de FPDF) et envoyant un pdf en interne par email (avec l'utilisation de phpmailer). 
+                        </p>
+
+                    </li>
+
+                    <li>Intégration d'une maquette de page accueil.</li>
+                    <li>Integration Newsletter.</li>
+                    <li>Recherche et Développement sur  l'architecture de Magento.</li>
+                    <li>Installation de modules Magento.</li>
+                    <li>Modification styles CSS Magento.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="data-block">
+            <div class="data-title">Avril 2013 à Juillet 2014</div>
+            <div class="data-content">
+                <h3>Infographiste Web</h3>
+                <ul>
+                    <li>Création d'un site vitrine responsive avec l'aide de bootstrap 3.</li>
+                    <li>Integration de Newsletter mentuel.</li>
+                    <li>Rédaction, gestion des stock, et administration d'un site sur prestashop.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="container--full">
+        <section id="contact" class="medium-6">
+            <form method="post" action="">
+                <fieldset class="">
+                    <legend class="">Me contacter</legend>    
+                    <label for="mail">Votre adresse mail</label>
+                    <input placeholder="Votre adresse mail" required class="tiny-12" type="text" name="mail" id="mail">
+                    <label for="objet">Objet du message</label>
+                    <input placeholder="Objet du message" required class="tiny-12" type="text" name="objet" id="objet">
+                    <label for="message">Message</label>
+                    <textarea name="" placeholder="Votre message" id="" class="tiny-12"></textarea>
+                    <input type="submit" value="Envoyer votre message" />
+            
+
+                </fieldset>
+            </form>
+        </section>
+        <section id="maps" class="medium-6">
+                		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41949.02459357122!2d2.187311582031253!3d48.91893518167369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e663f324a7b43b%3A0xb1cce2abcbefd0d!2sHouilles+-+Carri%C3%A8res-sur-Seine!5e0!3m2!1sfr!2sfr!4v1442859196554" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section> 
+    </div>
+
+
+        <script src="js/smooth-scroll.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
